@@ -17,4 +17,10 @@ print("<br>Liczba binarna to: ".$LiczbaBin);
 
 $LiczbaDuza = 1_234_567;
 print("<br>Liczba duża to: ".$LiczbaDuza);
+
+$a = 1.234;
+$b = 1.2e3;     //1.2*10**3
+$c = 7E-10;     //7*10**(-10)
+$d = 1_234.567; //as of PHP 7.4.0
+
 ?>
