@@ -1,7 +1,7 @@
+<?php
 /*
     Skrypt PHP do demonstracji typów zmiennych
-/*
-<?php
+*/
 
 $liczba1 = 42;
 print("Liczba to: ".$liczba1);
