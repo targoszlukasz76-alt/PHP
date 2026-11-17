@@ -1,0 +1,27 @@
+<form>
+    <select id="pierwszySelect" multiple="multiple" style="width: 30%;">
+        <option value="1"> opcja 1</option>
+        <option value="2"> opcja 2</option>
+        <option value="3"> opcja 3</option>
+    </select>
+    <select id="drugiSelect" multiple="multiple" style="width: 30%;"></select><br>
+    <button type="button" id="przenies">Przenies --> </button>
+</form>
+<script>
+    const select1 = document.querySelector("#pierwszySelect");
+    const select2 = document.querySelector("#drugiSelect");
+    const przycisk = document.querySelector("#przenies");
+    przycisk.addEventListener("click", przenies);
+
+    function przenies(){
+        for(let el of select1.options){
+            if (el.selected){
+                const nowyOption = document.createElement("option");
+                nowyOption.value = el.value;
+                nowyOption.textContent = el.textContent;
+                select2.appendChild(nowyOption)
+                el.remove();
+            }
+        }
+    }
+</script>

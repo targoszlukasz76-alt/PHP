@@ -1,0 +1,10 @@
+<h1>Skrypt który kopiuje tekst i wyswietla je duzymi literami</h1>
+<input type="text" id="pole1" onchange="Dogory()"><br>
+<input type="text" id="pole2">
+<script>
+    function Dogory(){
+        let x=document.querySelector("#pole1");
+        let y=document.querySelector("#pole2");
+        y.value=x.value.toUpperCase();
+    }
+</script>

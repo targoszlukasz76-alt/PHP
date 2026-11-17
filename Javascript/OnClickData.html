@@ -1,0 +1,10 @@
+Wyswietla date
+<h1>Dzisiejsza data : </h1>
+<p id="przycisk" onclick="Data(this);"></p>
+<script>
+    document.querySelector("#przycisk").onclick = Data;
+    function Data(){
+        document.querySelector("p").innerHTML=Date();
+    }
+    //Skrypt do naprawienia
+</script>

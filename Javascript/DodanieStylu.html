@@ -1,0 +1,15 @@
+<style>
+    .p{
+        border: 1px solid red;
+    }
+</style>
+<html>
+    <div id="box"></div>
+</html>
+<script>
+    const box = document.querySelector("#box");
+    const akapit = document.createElement("p");
+    akapit.classList.add("p");
+    akapit.innerHTML = "to jest Akapit";
+    box.appendChild(akapit);
+</script>

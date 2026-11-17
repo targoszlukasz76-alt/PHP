@@ -1,0 +1,9 @@
+Dynamiczne przypisanie funkcji obslugi zdarzenia do elementu HTML
+<button id="myButton">Wyswietl date</button>
+<p id="demo"></p>
+<script>
+    document.querySelector("#myButton").onclick = displayDate;
+    function displayDate() {
+        document.querySelector("#demo").innerHTML = Date();
+    }
+</script>

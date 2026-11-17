@@ -1,0 +1,29 @@
+<form>
+    <input type="checkbox" name="towar1" class="wybierane" value="5">
+    <label for="towar1">Towar1 = 5zl</label>
+    <br>
+    <input type="checkbox" name="towar2" class="wybierane" value="10">
+    <label for="towar2">Towar2 = 10zl</label>
+    <br>
+    <input type="checkbox" name="towar3" class="wybierane" value="15">
+    <label for="towar3">Towar3 = 15zl</label>
+    <br>
+    <input type="checkbox" name="towar4" class="wybierane" value="20">
+    <label for="towar4">Towar4 = 20zl</label>
+    <br>
+    <input type="button" value="suma" onclick="Oblicz()">
+    <p id="wynikowy"></p>
+</form>
+<script>
+    function Oblicz(){
+        let wszystkieCheckboxy = document.querySelectorAll(".wybierane");
+        let paragraf = document.querySelector("#wynikowy");
+        let wynik = 0;
+        wszystkieCheckboxy.forEach(element => {
+            if(element.checked){
+                wynik += Number(element.value);
+            };
+        });
+        paragraf.innerHTML = ("Suma: "+wynik+"zl");
+    }
+</script>
